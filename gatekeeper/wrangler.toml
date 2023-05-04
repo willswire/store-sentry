@@ -1,0 +1,13 @@
+name = "gatekeeper"
+compatibility_date = "2022-04-18"
+main = "index.js"
+
+[[kv_namespaces]]
+binding = "APP_USERS"
+id = ""
+preview_id = ""
+
+[[r2_buckets]]
+binding = "APP_CONTENT"
+bucket_name = ""
+preview_bucket_name = ""
