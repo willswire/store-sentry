@@ -68,9 +68,10 @@ Next, the function creates a new Headers object and calls the `writeHttpMetadata
 
 The exported object has a `fetch` method that takes in a `request`, `env`, and `ctx` as parameters. It uses a switch statement to determine the method of the request. If the method is "PUT", it calls the `update` function with the `request` and `env` parameters. If the method is "GET", it calls the `read` function with the `request` and `env` parameters. Otherwise, it returns a response with the message "Method Not Allowed" and a status code of 405.
 
+
 ## Listening Post
 
-**This code defines several functions that handle an incoming request and perform various operations based on the request's payload. Here's a breakdown of each function and its purpose:
+**This code defines several functions that handle an incoming request and perform various operations based on the request's payload. Here's a breakdown of each function and its purpose:**
 
 1. **read**: This function reads the incoming request body and returns a parsed JSON object if the content-type of the request is "application/json". Otherwise, it returns null.
 
@@ -83,6 +84,9 @@ The exported object has a `fetch` method that takes in a `request`, `env`, and `
 5. **addEventListener**: This code registers an event listener for the "fetch" event. When a fetch event occurs, it calls the `handle` function with the request and responds with the returned response.
 
 Decodes your JWTs.
+
+
+
 
 Please read [CONTRIBUTING.md](https://github.com/yourusername/store-sentry/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
